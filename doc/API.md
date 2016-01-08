@@ -577,7 +577,7 @@ struct {
 
 'available' indicates whether or not the file can be downloaded immediately.
 
-'uploadProgress' is the current upload percentage of the file, including
+'uploadprogress' is the current upload percentage of the file, including
 redundancy. In general, files will be available for download before
 UploadProgress == 100.
 
@@ -655,11 +655,9 @@ renames the entry in the renter.
 
 Parameters:
 ```
-nickname string
+path     string
 newname  string
 ```
-'nickname' is the current name of the file entry.
-
 'newname' is the new name for the file entry.
 
 Response: standard.
